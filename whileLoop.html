@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="ids"></div>
+    <script language="JavaScript">
+
+        const fruit = ["mango", "apple"]
+        let output ="<table  border='1' cellspacing='0' cellpadding='10px' > <tr> <th> SN</th> <th> Fruits </th> <tr>"
+        let i = 0;
+        while (i < fruit.length) {
+           
+            output+=`<td>  ${i + 1} </td> <td>  ${fruit[i]} </td> `;
+          
+            i++;
+        }
+        output+= "</tr> </table>"
+        document.querySelector("#ids").innerHTML = output
+        
+    </script>
+</body>
+</html>

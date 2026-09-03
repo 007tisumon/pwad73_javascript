@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="" id="ids"></div>
+
+    <script language="JavaScript">
+        const fruits = ["Apple", "Banana", "Mango", "Orange", "Pineapple"];
+
+        // Using for loop to iterate over the array
+
+        let output = "<ul type='disc'>";
+        // document.write("<ul type='circle'>");
+        for (let i = 0; i < fruits.length; i++) {
+           output += `<li> ${fruits[i]} </li>`;
+        }
+        output += "</ul>";
+
+        console.log(output);
+
+        document.getElementById("ids").innerHTML = output;
+       //  document.write("</ul>")
+
+        // Using for...of loop to iterate over the array
+        document.write("<ol>");
+        for (let fruit of fruits) {
+            document.write(`<li> ${fruit} </li>`);
+        }
+        document.write("</ol>");
+    </script>
+</body>
+
+</html>
