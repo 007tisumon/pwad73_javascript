@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <div id="ids"></div>
     <script language="JavaScript">
 
         const fruit = ["mango", "apple"]
-        let output ="<table  border='1' cellspacing='0' cellpadding='10px' > <tr> <th> SN</th> <th> Fruits </th> <tr>"
+        let output = "<table  border='1' cellspacing='0' cellpadding='10px' > <tr> <th> SN</th> <th> Fruits </th> "
         let i = 0;
         while (i < fruit.length) {
-           
-            output+=`<td>  ${i + 1} </td> <td>  ${fruit[i]} </td> `;
-          
+
+            output += `<tr><td>  ${i + 1} </td> <td>  ${fruit[i]} </td> </tr> `;
+
             i++;
         }
-        output+= "</tr> </table>"
+        output += "</tr> </table>"
         document.querySelector("#ids").innerHTML = output
-        
+
+
+
+        // const hello = parseInt(prompt("Enter a number: "))
+        // const number = parseInt(prompt("Enter second number: "))
+        let hello1 = " no"
+        var post = true
+        //document.write(hello + number)
+
+
+
+
+
+
+
+        const studentArr = ["Sumon", "Rokon", "Yasin", "Mahir", "Nasir"]
+
+        console.log(studentArr[-1])
+        const mySet = new Set([a => "a", b => "b", c => "c"])
+
+        console.log(mySet.entries())
+
+
+        for (let i = 0; i <= 20; i++) {
+            if (i % 2 === 0) {
+                document.write()
+            }
+        }
+
     </script>
 </body>
+
 </html>
