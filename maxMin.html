@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+       first = parseInt(prompt("Enter 1 st number")) || "you did no enter number"
+       sec = parseInt(prompt("Enter sec st number"))  || "you did no enter number"
+       third = parseInt(prompt("Enter 3rd st number"))  || "you did no enter number"
+
+
+       let max = first
+       let min = first
+       if(sec > max){
+        max= sec
+       }
+       if(third > max){
+        max = third
+       }
+       if(sec < min){
+        min = sec
+       }
+       if(third<min){
+        min = third
+       }
+
+       document.write(`max=${max} , min=${min}`)
+
+
+    </script>
+</body>
+</html>
