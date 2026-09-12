@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>output <span class="show"></span></h1>
+    <form action="" name="myForm" onsubmit="return validation()">
+        <input type="text" name="userName" placeholder="Enter your Name" id=""> <br>
+        <input type="password" name="password" placeholder="Enter your Last name" id=""> <br>
+        <input type="submit" value="Submit" id="">
+    </form>
+
+
+    <script>
+
+
+
+
+        const validation = (e) => {
+
+            const userName = document.myForm.userName.value
+            const password = document.myForm.password.value
+
+            if (userName.length < 6) {
+                alert("must be 6 char")
+               return false
+            }
+            if(password.length > 8){
+                alert("password within be maximum 8 char long")
+                return false
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

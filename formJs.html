@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>output <span class="show"></span></h1>
+    <form action="" name="myForm">
+        <input type="text" name="fname" placeholder="Enter your Name" id=""> <br>
+        <input type="text" name="lname" placeholder="Enter your Last name" id=""> <br>
+        <input type="number" name="num" placeholder="Enter your Last number" id=""> <br>
+        <input type="button" onclick="fullName()" value="Submit" id="">
+    </form>
+
+
+    <script>
+        
+
+        document.myForm.fname.value = "Mr"
+        document.myForm.lname.value = "X"
+
+        const fullName=(e)=>{
+           
+            const fname = document.myForm.fname.value
+            const lname = document.myForm.lname.value
+            const num = document.myForm.num.value
+
+            //const {fname.value,lname.value} = document.myForm
+
+            //console.log(document)
+
+            //document.write(typeof num)
+
+            document.querySelector(".show").innerHTML = fname+ " " + lname
+        }
+
+    </script>
+</body>
+</html>
